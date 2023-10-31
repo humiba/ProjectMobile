@@ -18,7 +18,8 @@ public class OnboardingAdapter extends PagerAdapter {
             R.layout.onboarding4
     };
 
-    OnboardingAdapter(Context context) {
+    // Constructor
+    public OnboardingAdapter(Context context) {
         this.context = context;
     }
     @Override

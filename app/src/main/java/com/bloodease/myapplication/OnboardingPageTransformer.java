@@ -37,13 +37,6 @@ public class OnboardingPageTransformer implements ViewPager.PageTransformer {
             View title = page.findViewById(R.id.usually_thi);
             title.setAlpha(1.0f - absPosition);
 
-            // Now the description. We also want this one to
-            // fade, but the animation should also slowly move
-            // down and out of the screen
-            View description = page.findViewById(R.id.skip_step);
-            description.setTranslationY(-pageWidthTimesPosition / 2f);
-            description.setAlpha(1.0f - absPosition);
-
             // Now, we want the image to move to the right,
             // i.e. in the opposite direction of the rest of the
             // content while fading out

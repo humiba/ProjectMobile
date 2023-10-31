@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -14,11 +16,17 @@ public class OnboardingActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private OnboardingAdapter onboardingAdapter;
+    private Button nextBtn;
+    private TextView skipStep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_onboarding);
+
+        nextBtn = (Button) findViewById(R.id.nextBtn);
+        nextBtn.setOnClickListener(view -> nextPage(view));
+
         makeStatusbarTransparent();
 
         viewPager = findViewById(R.id.onboarding_view_pager);
@@ -33,9 +41,17 @@ public class OnboardingActivity extends AppCompatActivity {
 
     // Listener for next button press
     public void nextPage(View view) {
-        if (view.getId() == R.id.button2) {
+        if (view.getId() == R.id.nextBtn) {
+            nextBtn = findViewById(R.id.nextBtn);
+            skipStep = findViewById(R.id.skipStep);
             if (viewPager.getCurrentItem() < onboardingAdapter.getCount() - 1) {
                 viewPager.setCurrentItem(viewPager.getCurrentItem() + 1, true);
+                nextBtn.setText("Next");
+                skipStep.setText("Skip Step");
+            }
+            if (viewPager.getCurrentItem() + 1 == onboardingAdapter.getCount()) {
+                nextBtn.setText("Sign In");
+                skipStep.setText("");
             }
         }
     }
@@ -52,4 +68,5 @@ public class OnboardingActivity extends AppCompatActivity {
             window.setStatusBarColor(Color.TRANSPARENT);
         }
     }
+
 }

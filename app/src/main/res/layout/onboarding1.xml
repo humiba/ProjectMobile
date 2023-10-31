@@ -52,32 +52,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hot_tracks" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#EF7278"
-        android:text="Let's Begin"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/skip_step"
-        app:layout_constraintEnd_toEndOf="@+id/usually_thi"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/usually_thi" />
-
-    <TextView
-        android:id="@+id/skip_step"
-        android:layout_width="60dp"
-        android:layout_height="58dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="56dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:lineSpacingExtra="39sp"
-        android:text="@string/skip_step"
-        android:textAppearance="@style/skip_step"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
