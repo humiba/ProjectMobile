@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BloodEase</string>
+    <string name="createacc">Create your account</string>
+    <string name="input_text">Full Name</string>
+    <string name="signupbtn">Sign Up</string>
+    <string name="signinbtn">Sign In</string>
+    <string name="otpbtn">Continue</string>
 </resources>

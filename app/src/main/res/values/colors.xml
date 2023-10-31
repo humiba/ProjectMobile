@@ -6,4 +6,6 @@
     <color name="mainSoftColor">#F79CA4</color>
     <color name="mainDarkColor">#1E2D50</color>
     <color name="mainBrownColor">#B6555A</color>
+    <color name="grey">#CBCDCD</color>
+    <color name="titlePink">#EF7278</color>
 </resources>
