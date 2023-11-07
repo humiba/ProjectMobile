@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Check your Email"
+        android:text="Kiểm Tra Email"
         android:textColor="@color/titlePink"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="We have sent you the code"
+        android:text="Chúng tôi đã gửi cho bạn một mã code đến"
         android:textColor="@color/titlePink"
         android:textSize="15sp" />
 
@@ -61,7 +61,7 @@
         android:layout_marginStart="33dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
-        android:text="Enter code"
+        android:text="Nhập mã"
         android:textColor="@color/titlePink"
         android:textSize="12sp" />
 
@@ -145,6 +145,6 @@
         android:layout_below="@+id/otpbtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Didn’t reveive the code?    Resend" />
+        android:text="Bạn không nhận được mã code.    Gửi lại" />
 
 </RelativeLayout>

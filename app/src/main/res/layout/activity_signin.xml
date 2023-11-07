@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F8FB"
-    tools:context=".MainActivity">
+    tools:context=".SignInActivity">
 
     <ImageView
         android:id="@+id/logo"
@@ -43,7 +43,7 @@
         android:background="@drawable/gray_border"
         android:drawableLeft="@drawable/email"
         android:drawablePadding="20dp"
-        android:hint="Email or Phone number"
+        android:hint="Email hoặc số điện thoại"
         android:padding="10dp"
         android:textColor="@color/grey"
         android:textColorHint="@color/grey" />
@@ -61,7 +61,7 @@
         android:drawableLeft="@drawable/password"
         android:drawablePadding="20dp"
         android:drawableRight="@drawable/eyesoff"
-        android:hint="Password"
+        android:hint="Mật khẩu"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="@color/grey"
@@ -74,13 +74,13 @@
         android:layout_below="@id/password"
         android:layout_marginTop="10dp"
         android:layout_alignEnd="@id/password"
-        android:text="Forgot password?" />
+        android:text="Quên mật khẩu?" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signinbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign in"
+        android:text="Đăng nhập"
         android:textSize="24dp"
         android:layout_below="@id/forgotpassword"
         android:layout_centerHorizontal="true"
@@ -97,7 +97,7 @@
         android:layout_below="@+id/signinbtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="Or Sign in with" />
+        android:text="Hoặc" />
 
     <View
         android:id="@+id/leftLine"
@@ -125,19 +125,30 @@
 
     <LinearLayout
         android:id="@+id/socialicons"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="42dp"
         android:layout_below="@+id/info"
         android:layout_marginTop="17dp"
+        android:layout_alignStart="@id/signinbtn"
         android:background="@drawable/pink_border"
-        android:gravity="center"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp">
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        >
+
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
+            android:src="@drawable/google"
+            android:layout_gravity="start|center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/google" />
+            android:text="Đăng nhập với Google"
+            android:layout_marginStart="70dp"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
@@ -147,6 +158,6 @@
         android:layout_below="@+id/signinbtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:text="Don't have an account?    Sign Up Now" />
+        android:text="Bạn chưa có tài khoản?    Đăng ký ngay" />
 
 </RelativeLayout>

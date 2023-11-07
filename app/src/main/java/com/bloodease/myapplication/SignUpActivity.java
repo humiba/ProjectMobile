@@ -77,7 +77,7 @@ public class SignUpActivity extends AppCompatActivity {
                 boolean isAnyFieldEmpty = username.isEmpty() || email.isEmpty() || password.isEmpty() || rePassword.isEmpty();
 
                 if (isAnyFieldEmpty) {
-                    Toast.makeText(SignUpActivity.this, "Please enter your information!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this, "Nhập thông tin của bạn!", Toast.LENGTH_SHORT).show();
                 } else {
                     // Perform the sign-up process here
 
@@ -90,10 +90,19 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(signInText.getText().toString());
-        SpannableString spannableString = new SpannableString("Sign in");
+        SpannableString spannableString = new SpannableString("Đăng nhập");
         spannableString.setSpan(new ForegroundColorSpan(Color.parseColor("#FB6F78")), 0, spannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         spannableString.setSpan(new UnderlineSpan(), 0, spannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableStringBuilder.replace(spannableStringBuilder.toString().indexOf("Sign in"), spannableStringBuilder.toString().indexOf("Sign in") + "Sign in".length(), spannableString);
+        spannableStringBuilder.replace(spannableStringBuilder.toString().indexOf("Đăng nhập"), spannableStringBuilder.toString().indexOf("Đăng nhập") + "Đăng nhập".length(), spannableString);
         signInText.setText(spannableStringBuilder);
+        signInText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Điều hướng đến màn hình đăng nhập ở đây
+                Intent intent = new Intent(SignUpActivity.this, SignInActivity.class); // Thay thế LoginActivity bằng tên hoạt động đăng nhập thực tế của bạn
+                startActivity(intent);
+            }
+        });
+
     }
 }
