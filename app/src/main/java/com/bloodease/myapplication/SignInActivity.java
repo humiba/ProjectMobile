@@ -38,7 +38,7 @@ public class SignInActivity extends AppCompatActivity {
                 String password = passwordEditText.getText().toString().trim();
 
                 // Kiểm tra xác thực người dùng và thực hiện đăng nhập
-                // Nếu đăng nhập thành công, bạn có thể chuyển sang màn hình chính hoặc màn hình khác
+
                 Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
@@ -62,7 +62,7 @@ public class SignInActivity extends AppCompatActivity {
         signUpText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Chuyển đến màn hình đăng ký nếu người dùng chưa có tài khoản
+
                 Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }

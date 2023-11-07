@@ -98,8 +98,8 @@ public class SignUpActivity extends AppCompatActivity {
         signInText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Điều hướng đến màn hình đăng nhập ở đây
-                Intent intent = new Intent(SignUpActivity.this, SignInActivity.class); // Thay thế LoginActivity bằng tên hoạt động đăng nhập thực tế của bạn
+                // Điều hướng đến màn hình đăng nhập
+                Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
                 startActivity(intent);
             }
         });
