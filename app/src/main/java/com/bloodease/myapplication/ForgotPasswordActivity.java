@@ -59,7 +59,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 // After the reset process, you can navigate to another screen if needed
 
                 // For example, navigate to a confirmation screen
-                Intent intent = new Intent(ForgotPasswordActivity.this, MainActivity.class);
+                Intent intent = new Intent(ForgotPasswordActivity.this, OTPActivity.class);
                 startActivity(intent);
                 finish();
             }

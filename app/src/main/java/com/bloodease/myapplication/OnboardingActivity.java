@@ -34,9 +34,7 @@ public class OnboardingActivity extends AppCompatActivity {
 
         onboardingAdapter = new OnboardingAdapter(this);
         viewPager.setAdapter(onboardingAdapter);
-        viewPager.setPageTransformer(false, new OnboardingPageTransformer());
-
-
+//        viewPager.setPageTransformer(false, new OnboardingPageTransformer());
     }
 
 
