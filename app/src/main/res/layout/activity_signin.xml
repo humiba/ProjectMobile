@@ -155,9 +155,9 @@
         android:id="@+id/signUpLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/signinbtn"
+        android:layout_below="@+id/socialicons"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:text="Bạn chưa có tài khoản?    Đăng ký ngay" />
+        android:layout_marginTop="40dp"
+        android:text="Bạn chưa có tài khoản? Đăng ký ngay" />
 
 </RelativeLayout>

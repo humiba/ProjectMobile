@@ -183,7 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/socialicons"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:text="Bạn đã có tài khoản?    Đăng nhập" />
+        android:layout_marginTop="40dp"
+        android:text="Bạn đã có tài khoản? Đăng nhập" />
 
 </RelativeLayout>

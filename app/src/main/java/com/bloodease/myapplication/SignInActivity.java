@@ -17,6 +17,7 @@ import com.google.android.material.button.MaterialButton;
 public class SignInActivity extends AppCompatActivity {
 
     private EditText emailEditText, passwordEditText;
+    private TextView forgotPasswordText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class SignInActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.password);
 
         MaterialButton signInButton = findViewById(R.id.signinbtn);
-        TextView forgotPasswordText = findViewById(R.id.forgotpassword);
+        forgotPasswordText = findViewById(R.id.forgotpassword);
         final TextView signUpText = findViewById(R.id.signUpLink);
 
         signInButton.setOnClickListener(new View.OnClickListener() {

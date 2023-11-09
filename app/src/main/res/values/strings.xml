@@ -5,4 +5,13 @@
     <string name="signupbtn">Đăng ký</string>
     <string name="signinbtn">Đăng nhập</string>
     <string name="otpbtn">Tiếp tục</string>
+    <string name="hot_tracks">
+        Find donators
+    </string>
+    <string name="usually_thi">
+Usually this process takes hours and days, but now once you log in you will be able to find donors immediately.
+</string>
+    <string name="skip_step">
+Skip Step
+</string>
 </resources>
