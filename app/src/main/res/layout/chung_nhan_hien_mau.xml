@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8FB"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/arrow_left"
+        android:onClick="onBackPressed"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/cnhm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:text="CHỨNG NHẬN HIẾN MÁU"
+        android:textColor="@color/titlePink"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:gravity="center_horizontal|top" />
+
+    <RelativeLayout
+        android:id="@+id/frame1_cnhm"
+        android:layout_width="392dp"
+        android:layout_height="154dp"
+        android:layout_below="@id/cnhm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/frame1_cnhm">
+
+        <ImageView
+            android:id="@+id/logocnhm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/chm"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/xemchitiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="120dp"
+            android:text="Xem chi tiết"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rectangle1_cnhm"
+            android:layout_width="392dp"
+            android:layout_height="102dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle1_cnhm" />
+
+        <View
+            android:id="@+id/logo"
+            android:layout_width="23.26dp"
+            android:layout_height="31.59dp"
+            android:layout_marginLeft="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/logocnhm" />
+
+        <TextView
+            android:id="@+id/ml"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/logo"
+            android:layout_marginLeft="22dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="250ml"
+            android:textColor="@color/titlePink"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text1_cnhm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:text="Chờ xác thực"
+            android:textColor="#FFA927"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/text2_cnhm"
+            android:layout_width="296dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="28dp"
+            android:text="Bệnh viện truyền máu - Huyết học TP HCM"
+            android:gravity="top"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text3_cnhm"
+            android:layout_width="201dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="57dp"
+            android:text="Số seri: 1275749362"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/text4_cnhm"
+            android:layout_width="201dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="79dp"
+            android:text="Thời gian: 01/11/2023"
+            android:textColor="#959595"
+            android:gravity="top" />
+    </RelativeLayout>
+
+    <!-- New RelativeLayout for the second block -->
+    <RelativeLayout
+        android:id="@+id/frame2_cnhm"
+        android:layout_width="392dp"
+        android:layout_height="154dp"
+        android:layout_below="@id/frame1_cnhm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/frame1_cnhm"
+        >
+
+        <ImageView
+            android:id="@+id/logocnhm_verified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/chm"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/xemchitiet_verified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="120dp"
+            android:text="Xem chi tiết"
+            android:textColor="@color/white"
+            android:gravity="top"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/rectangle2_cnhm"
+            android:layout_width="392dp"
+            android:layout_height="102dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle1_cnhm" />
+
+        <View
+            android:id="@+id/logo_verified"
+            android:layout_width="23.26dp"
+            android:layout_height="31.59dp"
+            android:layout_marginLeft="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/logocnhm" />
+
+        <TextView
+            android:id="@+id/ml_verified"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:layout_below="@+id/logo_verified"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="350ml"
+            android:textColor="@color/titlePink"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text1_cnhm_verified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:text="Đã xác thực"
+            android:textColor="#126294"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/text2_cnhm_verified"
+            android:layout_width="296dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="28dp"
+            android:text="Bệnh viện Quân Y 175"
+            android:gravity="top"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text3_cnhm_verified"
+            android:layout_width="201dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="57dp"
+            android:text="Số seri: 536826481"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/text4_cnhm_verified"
+            android:layout_width="201dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="79dp"
+            android:text="Thời gian: 01/03/2023"
+            android:textColor="#959595"
+            android:gravity="top" />
+    </RelativeLayout>
+
+</RelativeLayout>
