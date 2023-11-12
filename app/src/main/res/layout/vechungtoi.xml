@@ -25,7 +25,7 @@
             android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/arrow_left" />
+            app:srcCompat="@drawable/arrow_left_1" />
         <TextView
             android:id="@+id/chinhsach"
             android:layout_width="wrap_content"
