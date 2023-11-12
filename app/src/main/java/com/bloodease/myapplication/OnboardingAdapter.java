@@ -28,13 +28,11 @@ public class OnboardingAdapter extends PagerAdapter {
     }
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-//        return false;
         return view == object;
     }
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-//        return super.instantiateItem(container, position);
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(layouts[position], container, false);
         view.setTag(position);
