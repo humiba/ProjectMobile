@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Setting"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F8F8F8"
+    android:clipToOutline="true">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Cá Nhân"
+        android:textColor="#FD6E77"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <!-- Tiêu đề "Tài khoản" -->
+    <TextView
+        android:id="@+id/accounttitle_1"
+        android:layout_width="67dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:text="Tài khoản:"
+        android:textStyle="bold"
+        android:textColor="#5C747E"
+        android:gravity="center_horizontal|top"
+        />
+    <!-- Ô trắng -->
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        />
+    <!-- Kẻ ngang -->>
+    <View
+        android:id="@+id/leftLine_1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="210dp"
+        android:layout_weight="1"
+        android:background="#33000000" />
+
+    <TextView
+        android:id="@+id/thongtincanhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="170dp"
+        android:text="Thông tin cá nhân"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3sp"
+        android:translationY="-1.62sp"
+        android:gravity="center_horizontal|top"
+        />
+
+    <TextView
+        android:id="@+id/chungnhanhienmau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/thongtincanhan"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
+        android:text="Chứng nhận hiến máu:"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3sp"
+        android:translationY="-1.62sp"
+        android:gravity="center_horizontal|top"
+        />
+
+
+<!-- MỤC 02-->
+    <!-- Tiêu đề "Về BloodEase" -->
+    <TextView
+        android:id="@+id/accounttitle_2"
+        android:layout_width="95dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:text="Về BloodEase:"
+        android:textColor="#5C747E"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3sp"
+        android:translationY="-1.62sp"
+        android:gravity="center_horizontal|top"
+    />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="329dp"
+        android:background="@color/white" />
+    <!-- Kẻ ngang -->>
+    <View
+        android:id="@+id/leftLine_2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="390dp"
+        android:layout_weight="1"
+        android:background="#33000000" />
+    <View
+        android:id="@+id/leftLine_3"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="450dp"
+        android:layout_weight="1"
+        android:background="#33000000" />
+    <TextView
+        android:id="@+id/gioithieuapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/thongtincanhan"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="350dp"
+        android:text="Giới thiệu về Blood Ease:"
+        android:lineSpacingExtra="3sp"
+        android:textStyle="bold"
+        android:translationY="-1.62sp"
+        android:gravity="center_horizontal|top"
+        />
+
+    <TextView
+        android:id="@+id/chinhsachbaomat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/thongtincanhan"
+        android:layout_marginTop="410dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="3sp"
+        android:text="Chính sách bảo mật:"
+        android:textStyle="bold"
+        android:translationY="-1.62sp" />
+    <TextView
+        android:id="@+id/danhgiaapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/thongtincanhan"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="472dp"
+        android:text="Đánh giá ứng dụng"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3sp"
+        android:translationY="-1.62sp"
+        android:gravity="center_horizontal|top"
+        />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/rectangle_dangxuatpf"
+        />
+    <TextView
+        android:id="@+id/dangxuat"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="615dp"
+        android:text="Đăng xuất"
+        android:textStyle="bold"
+        android:textColor="#FB6F78"
+        android:lineSpacingExtra="2sp"
+        android:translationY="-0.77sp"
+        android:gravity="center_horizontal|top"
+        />
+
+    <!-- Mũi tên -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ImageView 1 -->
+        <ImageView
+            android:id="@+id/muitenImageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="536dp"
+            android:src="@drawable/muiten" />
+
+        <!-- ImageView 2 -->
+        <ImageView
+            android:id="@+id/muitenImageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@id/muitenImageView1"
+            android:layout_marginTop="230dp"
+            android:layout_marginBottom="536dp"
+            android:src="@drawable/muiten" />
+
+        <!-- ImageView 3 -->
+        <ImageView
+            android:id="@+id/muitenImageView3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@id/muitenImageView1"
+            android:layout_marginTop="350dp"
+            android:layout_marginBottom="536dp"
+            android:src="@drawable/muiten" />
+
+        <!-- ImageView 4 -->
+        <ImageView
+            android:id="@+id/muitenImageView4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@id/muitenImageView1"
+            android:layout_marginTop="410dp"
+            android:layout_marginBottom="536dp"
+            android:src="@drawable/muiten" />
+
+        <!-- ImageView 5 -->
+        <ImageView
+            android:id="@+id/muitenImageView5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@id/muitenImageView1"
+            android:layout_marginTop="470dp"
+            android:layout_marginBottom="536dp"
+            android:src="@drawable/muiten" />
+    </RelativeLayout>
+
+    <!-- Thanh menu -->
+
+
+</RelativeLayout>
